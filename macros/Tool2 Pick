@@ -1,0 +1,18 @@
+; unlock Coupler
+M98 P"/macros/Coupler Unlock"
+
+;move to location
+G53 G1 X232.50 Y200 F2400
+
+;move in
+G53 G1 X232.50 Y236 F800
+
+; lock Coupler
+M98 P"/macros/Coupler Lock"
+
+G91
+G1 H2 Z5 F1000
+G90
+
+;move to location
+G53 G1 X232.50 Y200 F800
